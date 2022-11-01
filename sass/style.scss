@@ -186,3 +186,37 @@ section{
 .portfolio{
     background-color: #dcdde1;
 }
+
+.page-footer{
+    font-family: $font-logo;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f5f6fa;
+    ul{   
+        list-style-type: none;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 0;
+    }
+    i{
+        font-size: 20px;
+        background: black;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: $col-four;
+        border-radius: 50%;
+        transition: $transition;
+    }
+    i:hover{
+        transform: scale(1.2);
+    }
+    p{
+        padding: 0 10px;
+        font-weight: bold;
+        color: rgb(255, 196, 0);
+    }
+}
