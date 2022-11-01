@@ -1,3 +1,130 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  color: #2c2c54;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.section-title {
+  font-size: 48px;
+  margin-bottom: 72px;
+}
+
+.article-title {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+/* Navigation */
+.navigation {
+  padding-top: 35px;
+  padding-bottom: 12px;
+  text-align: end;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation li {
+  display: inline-block;
+  margin-right: 36px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation a:hover {
+  color: #33d9b2;
+}
+
+/* Header */
+.brand {
+  padding-top: 12px;
+  display: block;
+  text-align: start;
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+  color: yellow;
+}
+
+.splash {
+  background-image: url("https://images.pexels.com/photos/7546979/pexels-photo-7546979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  min-height: 700px;
+  position: relative;
+}
+
+.splash-inner {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page-title {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 auto;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.page-subtitle {
+  font-size: 72px;
+  margin: 24px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+.btn {
+  display: block;
+  width: 45%;
+  min-width: 60px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 196, 0);
+  background-color: rgb(255, 196, 0);
+  transition: all 1s;
+  color: #ffffff;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBYUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNaSjs7QURlQTtFQUNBLFNBQUE7RUFDQSxjQWhCVTtFQWlCVixlQUFBO0VBQ0EsZ0JBQUE7QUNaQTs7QURlQTtFQUNJLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUNaSjs7QURlQTtFQUNJLGlCQUFBO0VBQ0Esb0JBQUE7QUNaSjs7QURlQTtFQUNJLGVBQUE7RUFDQSxtQkFBQTtBQ1pKOztBRGVBO0VBQ0ksbUJBQUE7RUFDQSxlQUFBO0FDWko7O0FEZ0JBLGVBQUE7QUFFQTtFQUNJLGlCQUFBO0VBQ0Esb0JBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLCtCQWpEUTtFQWtEUixnQkFBQTtBQ2RKO0FEZUk7RUFDSSxTQUFBO0VBQ0EsVUFBQTtFQUNBLHFCQUFBO0FDYlI7QURlSTtFQUNJLHFCQUFBO0VBQ0Esa0JBQUE7QUNiUjtBRGVJO0VBQ0kscUJBQUE7RUFDQSxjQWpFRTtBQ29EVjtBRGVJO0VBQ0ksY0F0RUM7QUN5RFQ7O0FEaUJBLFdBQUE7QUFFQTtFQUNJLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLGlCQUFBO0VBQ0Esa0NBekVRO0VBMEVSLGVBQUE7RUFDQSxhQUFBO0FDZko7O0FEa0JBO0VBQ0ksd0lBQUE7RUFDQSxrQ0FBQTtFQUNBLHNCQUFBO0VBQ0EsNEJBQUE7RUFDQSxjQXhGTTtFQXlGTixpQkFBQTtFQUNBLGtCQUFBO0FDZko7O0FEa0JBO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsU0FBQTtFQUNBLFFBQUE7RUFDQSxnQ0FBQTtFQUNBLGtCQUFBO0FDZko7O0FEa0JBO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QUNmSjs7QURrQkE7RUFDSSxlQUFBO0VBQ0EsY0FBQTtFQUNBLCtCQTlHUTtFQStHUixnQkFBQTtBQ2ZKOztBRGtCQTtFQUNJLGNBQUE7RUFDQSxVQUFBO0VBQ0EsZUFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0EsK0JBeEhRO0VBeUhSLGVBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLG1CQUFBO0VBQ0EsOEJBQUE7RUFDQSxrQ0FBQTtFQUNBLGtCQS9IUztFQWdJVCxjQXZJTTtBQ3dIVjtBRGdCSTtFQUNJLHFCQUFBO0FDZFIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
