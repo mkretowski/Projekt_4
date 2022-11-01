@@ -19,7 +19,6 @@ $transition: all 1s;
 
 body{
 margin: 0;
-color: $col-five;
 font-size: 16px;
 line-height: 1.7; 
 }
@@ -37,8 +36,19 @@ section{
 }
 
 .section-title {
-    font-size: 48px;
-    margin-bottom: 72px;
+    font-size: 40px;
+    margin:auto;
+    font-family: $font-text;
+}
+
+.section-description {
+    font-size: 16px;
+    margin: auto;
+    padding-bottom: 72px;
+    font-weight: 200;
+    font-style: italic;
+    color: rgb(185, 180, 180);
+    font-family: $font-header;
 }
 
 .article-title{
@@ -141,4 +151,38 @@ section{
     &:hover {
         transform: scale(1.2);
     }
+}
+
+.services{
+    text-align: center;
+    background-color: #f5f6fa;
+    i{
+        font-size: 40px;
+        color:rgb(255, 196, 0);
+        width: 80px;
+        height: 80px;
+        line-height: 20px;
+        border-radius: 50%;
+        border-radius: 50%;
+        border-width: 4px;
+        border-style: solid;
+        border-color: rgb(255, 196, 0);
+        margin: 16px;
+    }
+    h5{
+        font-size: 20px;
+        font-family: $font-text;
+        margin: auto;
+    }
+    p{
+        font-family: $font-header;
+        margin: auto;
+        color: rgb(185, 180, 180);
+        font-size: 14px;
+        padding: 0 12px;
+    }
+}
+
+.portfolio{
+    background-color: #dcdde1;
 }
