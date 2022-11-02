@@ -1,5 +1,5 @@
 /* Variables */
-$col-one:#0097e6;
+$col-one:rgb(255, 196, 0);
 $col-two:#33d9b2;
 $col-three:#ff5252;
 $col-four:#ffffff;
@@ -51,12 +51,6 @@ section{
     font-family: $font-header;
 }
 
-.article-title{
-    margin-bottom: 12px;
-    font-size: 24px;
-}
-
-
 /* Navigation */
 
 .navigation {
@@ -92,7 +86,7 @@ section{
     text-align: start;
     font-family: $font-logo;
     font-size: 40px;
-    color: yellow;
+    color: $col-one;
 }
 
 .splash {
@@ -131,8 +125,7 @@ section{
 
 .btn {
     display: block;
-    width: 45%;
-    min-width: 60px;
+    width: 150px;
     margin: 0 auto;
     padding: 16px;
     font-family: $font-text;
@@ -144,8 +137,8 @@ section{
     border-radius: 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(255, 196, 0);
-    background-color: rgb(255, 196, 0);
+    border-color: $col-one;
+    background-color: $col-one;
     transition: $transition;
     color:$col-four;
     &:hover {
@@ -155,10 +148,10 @@ section{
 
 .services{
     text-align: center;
-    background-color: #f5f6fa;
+    background-color: #fdfdff;
     i{
         font-size: 40px;
-        color:rgb(255, 196, 0);
+        color:$col-one;
         width: 80px;
         height: 80px;
         line-height: 20px;
@@ -166,7 +159,7 @@ section{
         border-radius: 50%;
         border-width: 4px;
         border-style: solid;
-        border-color: rgb(255, 196, 0);
+        border-color: $col-one;
         margin: 16px;
     }
     h5{
@@ -184,14 +177,47 @@ section{
 }
 
 .portfolio{
-    background-color: #dcdde1;
+    text-align: center;
+    background-color: #eeeef1;   
+}
+
+.portfolio-card{
+    margin: 12px 6px;
+    height: 350px;
+    background-color: $col-four;
+}
+.card-image{
+    width: 100%;
+    height: 75%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.card-body{
+    h5{
+        font-size: 18px;
+        font-family: $font-text;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 12px;
+    }
+    p{
+        font-family: $font-header;
+        font-style: italic;
+        color: rgb(185, 180, 180);
+        font-size: 14px;
+        margin: 0;
+    }
 }
 
 .page-footer{
     font-family: $font-logo;
     font-size: 30px;
     text-align: center;
-    background-color: #f5f6fa;
+    background-color: #fdfdff;
     ul{   
         list-style-type: none;
         padding: 0;
@@ -217,6 +243,31 @@ section{
     p{
         padding: 0 10px;
         font-weight: bold;
-        color: rgb(255, 196, 0);
+        color: $col-one;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-title {
+        font-size: 25px; 
+    }
+    
+    .page-subtitle {
+        font-size: 30px;
+    }
+
+    .brand{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .navigation {
+        text-align: center;
+        padding-top: 12px;
+        li{
+            display: inline-block;
+            margin-right: 20px;
+            padding-bottom: 12px;
+        }
     }
 }
